@@ -4,9 +4,9 @@ dwca_test = function (metadata, sequences, taxa, out_folder) {
   seq$DNA_sequence = row.names(seq)
   seql = reshape(seq, 
                  idvar = "DNA_sequence",
-                 varying = list(colnames(seq)[1:3]),
+                 varying = list(colnames(seq)[1:(ncol(seq)-1)]),
                  v.names = "organismQuantity",
-                 times = colnames(seq)[1:3],
+                 times = colnames(seq)[1:(ncol(seq)-1)],
                  direction = "long")
   colnames(seql)[colnames(seql) == "time"] = "samp_name"
   tax = as.data.frame(taxa)
