@@ -11,6 +11,6 @@ The script in the R-Markdown file contains a full example analysis using DADA2. 
 
 # Limitations
 
-Currently, only are limited number of Darwin core archive and MIxS fields are incorporated in the tool. The main reason for this is that there is no agreement among experts and data aggregators on which fields are required or (highly) recommended and what the values of these fields should exactly be. There is currently also no field that can accommodate the bootstraps values of the Bayesian analysis of DADA2 and this function is therefore not used in the example.
+Currently, only are only a limited number of Darwin core archive and MIxS fields are incorporated in the tool. The main reason for this is that there is no agreement among experts and data aggregators on which fields are required or (highly) recommended and what the values of these fields should exactly be. There is currently also no field that can accommodate the bootstraps values of the Bayesian analysis of DADA2 and this function is therefore not used in the example.
 
 The idea that bioinformatics pipelines produce data that can be directly uploaded to biodiversity data aggregators seems to be a promising avenue for biodiversity informatics. Despite the current limitations we already publish the code for doing so on output of DADA2 in the hope it will be a useful guide for DADA2 users or bioinformatics and biodiversity informatics tool developers.
