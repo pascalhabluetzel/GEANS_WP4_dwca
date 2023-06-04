@@ -5,7 +5,8 @@ A Darwin core archive file for metabarcoding data requires three separate input 
 
 # User guide
 
-The script in the R-Markdown file contains a full example analysis using DADA2. Note that 16 GB RAM are neccessary to run the taxonomic assignment. At the end of the script, the _dwca_test_ function is used to generate the occurrence table, the DNA extension table and the updated metadata table. The _dwca_test_ function takes four arguments, that must be entered in the correct order. The first argument is the path to the metadata table. This table must be in .csv format (comma separated, plain text). The second argument is a sequence table and is either the output of the _makeSequenceTable_ or _removeBimeraDenovo_ functions of DADA2. Argument three is the taxa table that is produced by the _assignTaxonomy_ function of DADA2. Finally, a path to a output folder needs to be specified as fourth argument.
+The script in the R-Markdown file contains a minimal, but fully reproducible example analysis using DADA2. Note that 16 GB RAM are neccessary to run the taxonomic assignment. At the end of the script, the _dwca_test_ function is used to generate the occurrence table, the DNA extension table and the updated metadata table. The _dwca_test_ function takes four arguments, that must be entered in the correct order. The first argument is the path to the original metadata table. This table must be in .csv format (comma separated, plain text). The second argument is a sequence table and is either the output of the _makeSequenceTable_ or _removeBimeraDenovo_ functions of DADA2. Argument three is the taxa table that is produced by the _assignTaxonomy_ function of DADA2. Finally, a path to a output folder needs to be specified as fourth argument.
+The _dcwa_test_ function currently requires only base R. No additional R packages need te be installed beyond what is required to run DADA2.
 
 
 # Limitations
