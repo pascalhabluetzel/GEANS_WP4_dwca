@@ -2,6 +2,8 @@
 
 A Darwin core archive file for metabarcoding data requires three separate input files. The first is a metadata table, describing the relevant context of the observations, the second is the actual occurrence table and the third contains information on the amplicon sequence variants (ASVs) that were registered. The metadata table must be created manually by the user. The column heads must be identical with the corresponding field names in the Darwin core archive and MIx standards. The values of one field in the metadata table must correspond with the names of the samples in the DADA2 analysis. The sequences and read counts as well as taxonomic assignments which are the native output of the DADA2 workflow can then be combined with the content of the metadata table. In a second step, this content is distributed over the required input files for the Darwin core archive (metadata table, occurrence table and DNA extension table).
 
+This work was developed within the framework of the Interreg North Sea project GEANS: [https://www.geans.eu/] (https://www.geans.eu/)
+
 
 # User guide
 
